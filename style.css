@@ -1,0 +1,347 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    /* outline: 1px solid red;
+    outline-offset: -1px; */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F5FA;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card {
+    width: 85%;
+    height: 50%;
+    background-color: #FBFBFB;
+    display: flex;
+    border-radius: 24px;
+}
+
+.card-container {
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal #banner {
+    width: 100%;
+    height: 235px;
+    border-radius: 24px;
+    position: relative;
+    top: 30px;
+}
+
+.principal #perfil {
+    width: 200px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 30px;
+    position: relative;
+    bottom: 70px;
+    border: 3px solid #FBFBFB;
+    border-radius: 50%;
+}
+
+.infos {
+    width: 100%;
+    z-index: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 60px;
+    padding: 0 40px 0 40px;
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-left h1 {
+    color: #515254;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.info-left span {
+    color: rgba(81, 82, 84, 0.70);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-right span {
+    color: #858587;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+i {
+    margin: 0 5px 0 0;
+    font-size: 15px;
+}
+
+.links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-container {
+    width: 80vw;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-container a {
+    width: 40vw;
+    height: 65px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.link-container i {
+    font-size: 20px;
+}
+
+.link-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:690px) {
+    .principal #perfil {
+        width: 150px;
+        position: relative;
+        margin-left: 0;
+        justify-self: center;
+        align-self: center;
+        bottom: 50px;
+        border: 3px solid #FBFBFB;
+        border-radius: 50%;
+    }
+
+    .infos {
+        width: 100%;
+        z-index: 6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: 40px;
+        padding: 0 10px 0 10px;
+        gap: 15px;
+    }
+
+    .info-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-left h1 {
+        color: #515254;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .info-left span {
+        color: rgba(81, 82, 84, 0.70);
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .info-right {
+        width: 70%;
+        flex-wrap: nowrap;
+    }
+
+    .info-right span {
+        color: #858587;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .links {
+        margin-top: 15px;
+    }
+
+    .link-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .link-container a {
+        width: 80vw;
+        height: 65px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width:515px) {
+
+    .card {
+        width: 85%;
+        height: 70%;
+        background-color: #FBFBFB;
+        background-image: url(./assets/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 35%;
+        display: flex;
+        border-radius: 24px;
+    }
+
+    .principal #banner {
+        display: none;
+    }
+
+    .principal #perfil {
+        margin-top: 50px;
+        width: 160px;
+        height: 100%;
+        position: relative;
+        margin-left: 0;
+        justify-self: center;
+        align-self: center;
+        border: 3px solid #FBFBFB;
+        border-radius: 50%;
+    }
+
+    .infos {
+        width: 100%;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        padding: 0 10px 0 10px;
+    }
+
+    .info-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-left h1 {
+        color: #515254;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .info-left span {
+        color: rgba(81, 82, 84, 0.70);
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .info-right {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .info-right span {
+        color: #858587;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .link-container a {
+        width: 80vw;
+        height: 65px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width:405px) {
+    .info-left h1 {
+        color: #515254;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    .info-left span {
+        color: rgba(81, 82, 84, 0.70);
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .info-right span {
+        color: #858587;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
